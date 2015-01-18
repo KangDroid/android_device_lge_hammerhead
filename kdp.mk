@@ -11,6 +11,9 @@ $(call inherit-product, vendor/kdp/config/nfc_enhanced.mk)
 # Inherit device configuration
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
+# Google Stock APNS
+TARGET_IS_HAMMERHEAD := true
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := hammerhead
 PRODUCT_NAME := kdp_hammerhead
