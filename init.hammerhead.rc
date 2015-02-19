@@ -328,6 +328,14 @@ on property:init.svc.bootanim=stopped
 on property:ro.debuggable=1
     start ssr_ramdump
 
+# adb over network
+on property:service.adb.tcp.port=5555
+    stop adbd
+    start adbd
+on property:service.adb.tcp.port=-1
+    stop adbd
+    start adbd
+
 service rmt_storage /system/bin/rmt_storage
     class core
     user root
