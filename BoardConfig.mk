@@ -111,10 +111,6 @@ BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
-# Define kernel config for inline building
-TARGET_KERNEL_CONFIG := cyanogenmod_hammerhead_defconfig
-TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
-
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
        app.te \
